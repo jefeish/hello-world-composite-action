@@ -10,7 +10,7 @@ outputs:
     description: "Random number"
     value: ${{ steps.random-number-generator.outputs.random-number }}
 runs:
-  using: "composite"
+  using: composite
   steps:
     - name: Set Greeting
       run: echo "Hello $INPUT_WHO_TO_GREET."
